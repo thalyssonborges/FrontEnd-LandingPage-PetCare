@@ -1,4 +1,4 @@
-### PROJETO PETCARE - LANDING PAGE
+### :open_file_folder: PROJETO PETCARE - LANDING PAGE
 
 ##### Sobre:
 
@@ -22,5 +22,5 @@ https://www.figma.com/proto/Dg0drtRMNdMFzDKtJRSZuq/Pet-Care---Landing-page-(Comm
 
 ##### Projeto finalizado:
 
-
+https://thalyssonborges-frontend-petcare.netlify.app/
 
