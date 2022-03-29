@@ -1,0 +1,897 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Open+Sans&display=swap');
+
+/*  ------------ HEADER NAV--------------------- */
+.container-1{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 15px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+}
+.nav .nav-logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.nav .nav-logo img{
+    width: 50px;
+    padding-bottom: 19px;
+}
+.nav .nav-logo p{ 
+    font-size: 35px;
+    margin-left: 10px;
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif';
+    font-weight: 700;
+    color: rgb(219, 163, 10);
+}
+.nav .nav-logo span{
+    color: #00A4C6;
+}
+.nav .nav-logo a{
+    text-decoration: none;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 20px;
+}
+.nav-menu a{
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif';
+}
+.nav-menu a:hover{
+    color: green;
+    padding-bottom: 5px;
+    border-bottom: 2px solid green;
+}
+.nav-menu .botao-entrar a, .botao-cadastrar a{
+   background-color: #00a5c688;
+   color: black;
+   border-radius: 10px;
+   padding: 10px 30px;    
+   opacity: 90%;
+}
+.nav-menu .botao-cadastrar a{
+    background-color: #FFCA8A;
+}
+.nav-menu .botao-entrar a:hover, .botao-cadastrar a:hover{
+   color: white;
+   background-color: green;
+}
+.nav-menu .botao-entrar, .botao-cadastrar{
+    margin: 0;
+}
+
+/*  ------------ HEADER hero CONTENT --------------------- */
+.container-2{
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: auto;
+}
+.hero-content{
+    background-image: url(../img/banner-hero-content.png);
+    background-position: right bottom;
+    background-size: cover;
+    min-height: 680px;
+    width: 100%;
+    margin-top: 20px;
+}
+.hero-content-texto{
+    width: 100%;
+}
+.hero-content-texto-estrutura{
+    max-width: 500px;
+    padding-top: 160px;
+}
+.hero-content-texto h1, h2{
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif';
+}
+.hero-content-texto h1{
+    font-size: 60px;
+    text-shadow: 2px 2px 12px black;
+    margin: 0;
+    color: #FFCA8A;
+}
+.hero-content-texto h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.hero-content-texto button{
+    margin-top: 35px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.hero-content-texto button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+/*  ------------ SECTION SERVICE-CATEGORY --------------------- */
+.service-category{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.service-category h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.945);
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif';    
+}
+.service-category .traco{
+    width: 110px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: green;
+}
+.service-category .service-category-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    min-width: 100%;
+}
+.service-category .service-category-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 224px;
+    border: 1px solid #00A4C6;
+    border-radius: 20px;
+    background: rgb(198,159,0);
+    background: linear-gradient(0deg, rgba(198,159,0,0) 40%, rgba(0,164,198,0.3757878151260504) 125%);
+}
+.card-estrutura-1{
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.card-estrutura-2{
+    height: 50%;
+    padding-top: 20px;
+}
+.service-category .service-category-cards .card img{
+    height: 50px;
+}
+.service-category .service-category-cards .card-1,
+.service-category .service-category-cards .card-2{
+    border: 1px solid #ffca8a;
+    cursor: pointer;
+    background: rgb(198,159,0);
+    background: linear-gradient(0deg, rgba(198,159,0,0) 40%, rgba(255,202,138,0.3561799719887955) 125%);
+}
+.service-category .service-category-cards .card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.service-category .service-category-cards .card h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+/*  ------------ SECTION INFO --------------------- */
+.info-estrutura{
+    margin-top: 150px;
+    display: flex;
+}
+.info-estrutura-imagem{
+    display: flex;
+    flex: 1;
+
+}
+.info-estrutura-imagem .img-banner-info{
+    width: 100%;
+}
+.info-estrutura-imagem .saber-mais{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 185px;
+}
+.info-estrutura-imagem .saber-mais .icone-play{
+    max-width: 70px;
+    max-height: 70px;
+}
+.info-estrutura-imagem .saber-mais h4{
+    margin: 5px 0 0 30px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #175e75;
+    width: 135px;
+    padding-left: 10px;
+}
+.info-estrutura-imagem .saber-mais a{
+    text-decoration: none;
+    color: black;
+}
+.info-estrutura-texto{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-left: 10px;
+    flex: 1;
+}
+.info-estrutura-texto h2{
+    font-size: 30px;
+}
+.info-estrutura-texto p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Annie Use Your Telescope', cursive; 
+    line-height: 26px;
+    text-align: justify;
+}
+.info-estrutura-texto button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    width: 220px;
+    font-size: 16px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.info-estrutura-texto button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+/*  ------------ SECTION STORE --------------------- */
+.store{
+    margin-top: 150px;
+} 
+.store h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.945);
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif'; 
+}
+.store .traco{
+    width: 110px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: green;
+}
+.store .store-preco-vejaMais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store .store-preco-vejaMais h2{
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.945);
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif'; 
+}
+.store .store-preco-vejaMais button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.store .store-preco-vejaMais button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.store .store-produtos{
+    display: flex;
+    margin-top: 50px;
+    max-width: 1100px;
+}
+.store .store-produtos a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.store .store-produtos a:visited{
+    color: black;
+}
+.store .store-produtos .produto{
+    width: 100%;
+    margin: 5px;
+}
+.store .store-produtos .produto .produto-img{
+    width: 100%;
+}
+.store-produto-texto-container{
+    display: flex;
+    flex-direction: column;
+}
+.store-produto-texto-container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.store-produto-texto-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 70px;
+}
+.store .store-produto-texto-container h4{
+    font-size: 20px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0; 
+}
+.store .store-produto-texto-container p{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.452);
+    padding: 10px 20px 10px 20px;
+    height: 100px;
+}
+.store .store-produto-texto-container button{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.store .store-produto-texto-container button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+/*  ------------ SECTION INFO-2 --------------------- */
+.info-2{
+    background-image: url(../img/dog-banner2.jpg);
+    background-position: bottom right;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+    margin-top: 80px;
+}
+.info-2-estrutura-texto{
+     width: 420px;
+     padding-top: 50px;
+}
+.info-2-estrutura h3{
+    font-size: 30px;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+.info-2-estrutura p{
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    line-height: 25px;
+}
+.info-2-estrutura button{
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.info-2-estrutura button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+/*  ------------ SECTION HAPPY CUSTOMER --------------------- */
+
+.happy-customer{
+    margin-top: 80px;
+}
+.happy-customer h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.945);
+    font-family: 'Annie Use Your Telescope', cursive, 'sans-serif'; 
+}
+.happy-customer .traco{
+    width: 110px;
+    height: 5px;
+    margin-top: 5px;
+    margin-left: 100px;
+    background-color: green;
+}
+.happy-customer .customers{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1100px;
+}
+.happy-customer .customer{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    max-height: 350px;
+    padding: 0 10px;
+}
+.happy-customer .customer .img-cliente{
+    height: 5663px;
+    width: 100%;
+}
+.happy-customer .customer .img-client-texto{
+    background-color: #124C5F;
+    text-align: center;   
+    max-width: 420px;
+}
+.happy-customer .customer .img-client-texto-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+}
+.happy-customer .customer .img-client-texto-1 p{
+    
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.happy-customer .customer .img-client-texto-1 .comentario{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+} 
+.icon-avaliacao{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.icon-avaliacao p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.icon-avaliacao1 .color1,
+.icon-avaliacao1 .color2,
+.icon-avaliacao1 .color3,
+.icon-avaliacao1 .color4{
+    color: #FFCA8A;
+}
+.icon-avaliacao2 .color1,
+.icon-avaliacao2 .color2,
+.icon-avaliacao2 .color3,
+.icon-avaliacao2 .color4,
+.icon-avaliacao2 .color5{
+    color: #FFCA8A;
+}
+.icon-avaliacao3 .color1,
+.icon-avaliacao3 .color2,
+.icon-avaliacao3 .color3,
+.icon-avaliacao3 .color4,
+.icon-avaliacao3 .color5{
+    color: #FFCA8A;
+}
+.fa-paw{
+    margin-top: 10px;
+    color: white;
+    padding-right: 10px;
+}
+.happy-customer-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.happy-customer-button button{
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-transform: uppercase;
+    color: white;
+    background-color: #124C5F;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.happy-customer-button button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+/*  ------------ SECTION CONTACT --------------------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #F6FAF9;
+    min-width: 100%;
+}
+.contact-title-form{
+    padding-top: 80px;
+    text-align: center;
+}
+.contact-title-form h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-title-form .form-background input[type=email]{
+    width: 400px;
+    padding: 30px 25px;
+    font-size: 20px;
+    border: none;
+}
+.contact-title-form .form-background input[type=email]:focus{
+    outline: 0;
+    color: #00A4C6;
+}
+.contact-title-form .form-background input[type=email]::placeholder{
+    color: #0f0f0f6b;
+}
+.contact-title-form .form-background input[type=submit]{
+    padding: 15px 60px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #124C5F;
+}
+.contact-title-form .form-background input[type=submit]:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.form-background{
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.082);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-icon-email{
+    display: flex;
+    align-items: center;
+}
+.form-icon-email .icone{
+    color: #566e7557;
+}
+
+.contact-adress{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin: 60px 0;
+}
+.contact-adress .contact-adress-socialMedia .tipo{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.contact-adress .contact-adress-socialMedia .icone-fb-ig a{
+    color: #747474;
+}
+.contact-adress .contact-adress-contact{
+    display: flex;
+    width: 50%;
+}
+.contact-adress .contact-adress-contact .tipo{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+.contact-adress .contact-adress-contact .tel{
+    color: #124C5F;
+    font-size: 25px;
+    font-weight: 800S;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 15px 0;
+}
+.contact-adress .contact-adress-contact address{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: #0f0f0fad;
+}
+
+/*  ------------ SECTION FOOTER --------------------- */
+footer{
+    background-color: #F6FAF9;
+    border-top: 1px solid #c3c3c3;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.footer-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-div ul{
+    display: flex;
+    margin: 0;
+}
+.footer-div li{
+    list-style: none;
+    margin-left: 40px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer-div li a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer-div li a:hover{
+    cursor: pointer;
+}
+
+
+/*  ------------ R E S P O N S I V E --------------------- */
+@media (max-width:1300px){
+    .container-2{
+        padding-left: 20px;
+    }
+    .nav-menu ul{
+        display: none;
+    }   
+
+}
+@media (max-width:1100px){
+    .nav-menu ul{
+        display: none;
+    }
+    .hero-content{
+        min-height: 350px;
+        background-position: center;
+    }
+    .hero-content-texto-estrutura{
+        padding: 50px 0;
+    }
+    .service-category-cards .card{
+        max-width: 150px;
+        max-height: 174px;
+    }
+    .service-category-cards .card img{
+        width: 50px;
+    }
+    .service-category .service-category-cards .card h3{
+        font-size: 18px;
+    }
+
+    .store{
+        margin-top: 70px;
+    }
+    .info-estrutura{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .info-estrutura-texto{
+        width: 100%;
+    }
+    .info-estrutura-imagem{
+        margin-top: 20px;
+        width: 55%;
+    }
+}
+@media (max-width:1050px){
+    .info-estrutura-imagem .img-banner-info{
+        display: none;
+    }
+    .info-estrutura-imagem .saber-mais{
+        display: none;
+    }
+    .info-estrutura-imagem .saber-mais .icone-play{
+        max-width: 70px;
+        max-height: 70px;
+        margin: 0;
+    }
+    .info-estrutura-imagem .saber-mais h4{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    .footer-div{
+        flex-direction: column-reverse;
+        align-items: center;   
+        padding: 25px;   
+        background-color: #F6FAF9;
+    }
+    .footer-div ul{
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        padding: 25px;
+    }
+    .footer-div ul li{
+        margin: 0;
+        
+    }
+}
+@media (max-width:996px){
+    .info-2{
+        background-image: none;
+    }
+    .info-2-estrutura-texto{
+        width: 100%;
+        text-align: center;
+    }
+    .info-estrutura-texto{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .customers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:884px){
+    .info-estrutura-imagem .saber-mais .icone-play{
+        display: none;
+    }
+}
+
+@media (max-width:824px){
+    .service-category-cards{
+        flex-direction: column;
+    }
+    .service-category .service-category-cards .card{
+        min-width: 90%;
+        max-height: 70px;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-estrutura-1{
+        display: none;
+    }
+    .card-estrutura-2{
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .store-preco-vejaMais {
+        flex-direction: column;
+    }
+    .store-preco-vejaMais button{
+        margin-top: 20px;
+    }
+    .store-produtos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .produto{
+        max-width: 80%;
+        padding-bottom: 50px;
+    }
+    .store-produto-texto-container-1 p{
+        min-height: auto;
+
+    }
+    .store-produto-texto-container-2{
+        min-height: auto;
+    }
+
+}
+@media (max-width:755px){
+    .contact-adress{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-adress-socialMedia{
+        text-align: center;
+    }
+    .contact-adress-contact{
+        width: 500px;
+        margin-top: 40px;
+    }
+}
+@media (max-width:700px){
+    .hero-content{
+        background-position-x: left;
+    }
+    .form-background{
+        flex-direction: column;
+    }
+    .contact-adress-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px){
+    .form-icon-email .icone{
+        display: none;
+    }
+    .contact-title-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-title-form .form-background input[type=email]{
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+    }
+    .form-background input[type=submit]{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-background input{
+        margin-top: 20px;
+    }
+    .footer-div p{
+        flex-wrap: wrap;
+    }
+    .contact{
+        margin-top: 20px;
+    }
+    .form-background{
+        width: 320px;
+    }
+    .contact-adress-contact .contact-1 , .contact-2{
+        width: 280px;
+        font-size: 18px;
+    }
+    .footer-div ul{
+        flex-direction: column;
+    }
+}
